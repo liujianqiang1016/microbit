@@ -1,5 +1,5 @@
 {
-    "name": "ws4-radio-tx",
+    "name": "lpq",
     "description": "",
     "dependencies": {
         "core": "*",
