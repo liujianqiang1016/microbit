@@ -1,23 +1,22 @@
 {
-    "name": "lpq",
-    "description": "",
+    "name": "Mbit_IR_V2",
+    "version": "1.0.0",
+    "description": "Extension for YahBoom IR V2",
     "dependencies": {
-        "core": "*",
-        "radio": "*",
-        "microphone": "*",
-        "pxt-DS3231": "github:keble6/pxt-ds3231#v1.0.1",
-        "BMP280": "github:makecode-extensions/bmp280#v1.1.0",
-        "pxt-DHT11_DHT22": "github:alankrantas/pxt-dht11_dht22#v0.0.3"
+        "core": "*"
     },
     "files": [
-        "main.blocks",
-        "main.ts",
+        "README.md",
+        "infrared-receiver.ts",
+        "_locales/zh-cn/Mbit_IR_V2-strings.json",
+        "_locales/zh-tw/Mbit_IR_V2-strings.json"
     ],
     "testFiles": [
         "test.ts"
     ],
+    "public": true,
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
