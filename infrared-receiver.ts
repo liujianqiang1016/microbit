@@ -263,7 +263,7 @@ namespace makerbit {
   }
 
   /**
-   * Returns the code of the IR button that was pressed last. Returns -1 (IrButton.Any) if no button has been pressed yet.
+   * Returns the code of the IR button that was pressed last. Returns -1 (IrButton.Any) if no button has been pressed yet.*/
   //% blockId=makerbit_infrared_ir_button_pressed
   //% block="IR button"
   //% weight=70
@@ -274,11 +274,11 @@ namespace makerbit {
     }
     return irState.commandSectionBits >> 8;
   }
-   */
+  
 
   /**
    * Do something when an IR datagram is received.
-   * @param handler body code to run when the event is raised
+   * @param handler body code to run when the event is raised*/
   //% blockId=makerbit_infrared_on_ir_datagram
   //% block="on IR datagram received"
   //% weight=40
@@ -286,11 +286,10 @@ namespace makerbit {
     initIrState();
     irState.onIrDatagram = handler;
   }
-   */
 
   /**
    * Returns the IR datagram as 32-bit hexadecimal string.
-   * The last received datagram is returned or "0x00000000" if no data has been received yet.
+   * The last received datagram is returned or "0x00000000" if no data has been received yet.*/
   //% blockId=makerbit_infrared_ir_datagram
   //% block="IR datagram"
   //% weight=30
@@ -303,10 +302,9 @@ namespace makerbit {
       ir_rec_to16BitHex(irState.commandSectionBits)
     );
   }
-   */
 
   /**
-   * Returns true if any IR data was received since the last call of this function. False otherwise.
+   * Returns true if any IR data was received since the last call of this function. False otherwise. */
   //% blockId=makerbit_infrared_was_any_ir_datagram_received
   //% block="IR data was received"
   //% weight=80
@@ -320,11 +318,11 @@ namespace makerbit {
       return false;
     }
   }
-   */
+  
 
   /**
    * Returns the command code of a specific IR button.
-   * @param button the button
+   * @param button the button*/
   //% blockId=makerbit_infrared_button_code
   //% button.fieldEditor="gridpicker"
   //% button.fieldOptions.columns=3
@@ -349,7 +347,6 @@ namespace makerbit {
     }
     return hex;
   }
-   */
 }
 
 namespace makerbit {
